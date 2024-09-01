@@ -56,7 +56,7 @@ function PostViewPage(props){
         return item.id == postId;
     })
 
-    const [content, setContent] = useState('');
+    const [comment, setComment] = useState('');
 
     return(
         <Wrapper>
@@ -74,6 +74,14 @@ function PostViewPage(props){
                 
                 <CommentLabel>댓글</CommentLabel>
                 <CommentList comments={post.comments}/>
+
+                <TextInput
+                    height={40}
+                    value={comment}
+                    onChange={(event)=>{
+                        setComment(event.target.value);
+                    }}
+                />
 
                 <Button
                     title="댓글 작성하기"

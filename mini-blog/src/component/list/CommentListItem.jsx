@@ -17,7 +17,7 @@ const Wrapper = styled.div`
     }
 `;
 
-const TitleText = styled.p`
+const ContentText = styled.p`
     font-size: 14px;
 `;
 
